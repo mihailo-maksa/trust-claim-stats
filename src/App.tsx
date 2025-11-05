@@ -199,7 +199,7 @@ export default function App() {
 
       <header className="bar">
         <div>
-          <h1>TRUST Airdrop Stats</h1>
+          <h1>TRUST Airdrop Claim Stats</h1>
           <p className="muted">
             Live reads from Base mainnet & Intuition mainnet. All values assume
             18 decimals.
