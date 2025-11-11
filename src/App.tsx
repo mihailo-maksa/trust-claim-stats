@@ -267,16 +267,13 @@ export default function App() {
           subtitle="TRUST.balanceOf(MetaERC20Hub)"
           state={hubBal}
         />
-        <Card
+        {/* <Card
           title="Net Bridged to Base (from airdrop)"
           primary={fmt(toUnits(derived.bridgedToBase))}
           suffix="TRUST"
           subtitle="Allocated − Hub balance"
           highlight
-        />
-      </section>
-
-      <section className="grid">
+        /> */}
         <Card
           title="WTRUST Bonded on L3"
           primary={bondedBal.error ? "Error" : fmt(toUnits(derived.bonded))}
@@ -284,6 +281,9 @@ export default function App() {
           subtitle="WTRUST.balanceOf(TrustBonding)"
           state={bondedBal}
         />
+      </section>
+
+      <section className="grid">
         <Card
           title="WTRUST in Airdrop Vault (L3)"
           primary={vaultBal.error ? "Error" : fmt(toUnits(derived.vault))}
@@ -331,12 +331,9 @@ export default function App() {
             derived.claimable3F
           )} TRUST`}
         />
-      </section>
-
-      <section className="grid">
         <Card
           title="TRUST Price (USD)"
-          primary={num(priceUSD.data ?? 0, 4)}
+          primary={`$${num(priceUSD.data ?? 0, 4)}`}
           subtitle="Source: CoinGecko"
         />
       </section>
