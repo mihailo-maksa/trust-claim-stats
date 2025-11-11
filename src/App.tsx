@@ -408,6 +408,7 @@ function Card(props: {
   );
 }
 
+// @ts-ignore
 function Pill({ label, value }: { label: string; value: string }) {
   return (
     <div className="pill">
