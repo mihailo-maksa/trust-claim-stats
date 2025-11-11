@@ -408,15 +408,14 @@ function Card(props: {
   );
 }
 
-// @ts-ignore
-function Pill({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="pill">
-      <div className="pill-label">{label}</div>
-      <div className="pill-value">{value}</div>
-    </div>
-  );
-}
+// function Pill({ label, value }: { label: string; value: string }) {
+//   return (
+//     <div className="pill">
+//       <div className="pill-label">{label}</div>
+//       <div className="pill-value">{value}</div>
+//     </div>
+//   );
+// }
 
 function short(addr: string) {
   return addr.slice(0, 6) + "…" + addr.slice(-4);
